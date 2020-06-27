@@ -12,16 +12,19 @@
 */
 
 
+	Route::get('/img','RouterController@img');
+
+
+	Route::get('/','RouterController@index');
+	Route::post('routes','RouterController@list');
+
+	Route::post('route','RouterController@store');
+	Route::post('route/{id}','RouterController@update');
+	Route::delete('route/{id}','RouterController@delete');
+
 
 $router->group(['middleware' => 'CustomeAuth'], function () use ($router) {
 
-	Route::get('/','Ajax@index');
-
-	// Route::get('classes','TrainingClass@index');
-	// Route::post('classes','TrainingClass@list');
-	// Route::post('class','TrainingClass@store');
-	// Route::post('class/{id}','TrainingClass@update');
-	// Route::delete('class/{id}','TrainingClass@delete');
 
 	// Route::get('categories','Categories@list');
 	// Route::post('category','Categories@store');
