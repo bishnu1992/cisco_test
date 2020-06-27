@@ -25,12 +25,10 @@
 
 $router->group(['middleware' => 'CustomeAuth'], function () use ($router) {
 
+	Route::get('/','CurdController@index');
+	Route::post('curds','CurdController@list');
 
-	// Route::get('categories','Categories@list');
-	// Route::post('category','Categories@store');
-	// Route::get('trainers','Trainers@list');
-	// Route::post('trainer','Trainers@store');
-	// Route::get('levels','Levels@list');
-	// Route::post('level','Levels@store');
-
+	Route::post('curd','CurdController@store');
+	Route::post('curd/{id}','CurdController@update');
+	Route::delete('curd/{id}','CurdController@delete');
 });

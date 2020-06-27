@@ -10,7 +10,7 @@ class CustomeAuth
 	public function handle($request, Closure $next)
 	{
 		try {
-			// $auth = AccessKey::find($request->header('x-api-key'));
+			$auth = AccessKey::find($request->header('x-api-key'));
 			if (true) {
 				return $next($request);
 			}else{
