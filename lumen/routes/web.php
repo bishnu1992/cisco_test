@@ -25,7 +25,7 @@
 
 $router->group(['middleware' => 'CustomeAuth'], function () use ($router) {
 
-	Route::get('/','CurdController@index');
+	Route::get('curds','CurdController@index');
 	Route::post('curds','CurdController@list');
 
 	Route::post('curd','CurdController@store');

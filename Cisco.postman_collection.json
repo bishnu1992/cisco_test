@@ -1,0 +1,454 @@
+{
+	"id": "37a0d71d-ff03-59e0-2beb-ba7e8000a9fa",
+	"name": "Cisco",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Exercise1",
+			"description": "",
+			"collectionId": "37a0d71d-ff03-59e0-2beb-ba7e8000a9fa",
+			"order": [
+				"f78b6648-5422-5b89-3799-05a417f022fe",
+				"6d954cad-19ab-ec6c-acc3-817dccf8679c",
+				"18aa45aa-b2b3-1800-d101-ebcdb9db1b34",
+				"3d97435d-f93c-ed3e-4d1a-1690be4b4752",
+				"4a584919-b06e-1799-4ea3-1832d8b53f2a",
+				"d20963fe-aa32-cca3-94b4-7496ac909cff"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "ac28330c-33c3-1bd1-d51e-cfb1eb64fb4f"
+		},
+		{
+			"name": "Exercise3",
+			"description": "",
+			"collectionId": "37a0d71d-ff03-59e0-2beb-ba7e8000a9fa",
+			"order": [
+				"9a4c72be-d94f-d107-2f3d-e49313fb22f1",
+				"3bcfa5a3-8775-ffbc-ec21-8b5469d7de04",
+				"26d44c12-106e-985d-19b2-1d3c43ed8019",
+				"c1934589-b2ea-08dd-a425-4be8a673326b",
+				"d60d8547-beae-6f65-3d91-627fa4e7c150"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "ed2f9c9e-c886-a883-5b33-bfd9f5151683"
+		}
+	],
+	"folders_order": [
+		"ac28330c-33c3-1bd1-d51e-cfb1eb64fb4f",
+		"ed2f9c9e-c886-a883-5b33-bfd9f5151683"
+	],
+	"timestamp": 1593241446201,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "18aa45aa-b2b3-1800-d101-ebcdb9db1b34",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}",
+			"folder": "ac28330c-33c3-1bd1-d51e-cfb1eb64fb4f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593245282865,
+			"name": "list",
+			"description": "",
+			"collectionId": "37a0d71d-ff03-59e0-2beb-ba7e8000a9fa",
+			"responses": []
+		},
+		{
+			"id": "26d44c12-106e-985d-19b2-1d3c43ed8019",
+			"headers": "x-api-key: {{token}}\n",
+			"headerData": [
+				{
+					"key": "x-api-key",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}curds",
+			"folder": "ed2f9c9e-c886-a883-5b33-bfd9f5151683",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593258358605,
+			"name": "list",
+			"description": "",
+			"collectionId": "37a0d71d-ff03-59e0-2beb-ba7e8000a9fa",
+			"responses": []
+		},
+		{
+			"id": "3bcfa5a3-8775-ffbc-ec21-8b5469d7de04",
+			"headers": "x-api-key: {{token}}\n",
+			"headerData": [
+				{
+					"key": "x-api-key",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}curd/{{id}}",
+			"folder": "ed2f9c9e-c886-a883-5b33-bfd9f5151683",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "spid",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "hostname",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "loopback",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "macaddress",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593258424505,
+			"name": "update",
+			"description": "",
+			"collectionId": "37a0d71d-ff03-59e0-2beb-ba7e8000a9fa",
+			"responses": []
+		},
+		{
+			"id": "3d97435d-f93c-ed3e-4d1a-1690be4b4752",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}img",
+			"folder": "ac28330c-33c3-1bd1-d51e-cfb1eb64fb4f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593254972918,
+			"name": "img",
+			"description": "",
+			"collectionId": "37a0d71d-ff03-59e0-2beb-ba7e8000a9fa",
+			"responses": []
+		},
+		{
+			"id": "4a584919-b06e-1799-4ea3-1832d8b53f2a",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}routes",
+			"folder": "ac28330c-33c3-1bd1-d51e-cfb1eb64fb4f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593252277932,
+			"name": "routes",
+			"description": "",
+			"collectionId": "37a0d71d-ff03-59e0-2beb-ba7e8000a9fa",
+			"responses": [],
+			"rawModeData": "{\n\t\"where\":{\n\t\t\"id\":14\n\t}\n}"
+		},
+		{
+			"id": "6d954cad-19ab-ec6c-acc3-817dccf8679c",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}route/{{id}}",
+			"folder": "ac28330c-33c3-1bd1-d51e-cfb1eb64fb4f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "spid",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "hostname",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "loopback",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "macaddress",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593250955552,
+			"name": "route/id",
+			"description": "",
+			"collectionId": "37a0d71d-ff03-59e0-2beb-ba7e8000a9fa",
+			"responses": []
+		},
+		{
+			"id": "9a4c72be-d94f-d107-2f3d-e49313fb22f1",
+			"headers": "x-api-key: {{token}}\n",
+			"headerData": [
+				{
+					"key": "x-api-key",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}curd",
+			"folder": "ed2f9c9e-c886-a883-5b33-bfd9f5151683",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "spid",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "hostname",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "loopback",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "macaddress",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593258434911,
+			"name": "create",
+			"description": "",
+			"collectionId": "37a0d71d-ff03-59e0-2beb-ba7e8000a9fa",
+			"responses": []
+		},
+		{
+			"id": "c1934589-b2ea-08dd-a425-4be8a673326b",
+			"headers": "x-api-key: {{token}}\n",
+			"headerData": [
+				{
+					"key": "x-api-key",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}curds",
+			"folder": "ed2f9c9e-c886-a883-5b33-bfd9f5151683",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593258455782,
+			"name": "list filter",
+			"description": "",
+			"collectionId": "37a0d71d-ff03-59e0-2beb-ba7e8000a9fa",
+			"responses": [],
+			"rawModeData": "{\n\t\"where\":{\n\t\t\"type\":\n\t}\n}"
+		},
+		{
+			"id": "d20963fe-aa32-cca3-94b4-7496ac909cff",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}route/{{id}}",
+			"folder": "ac28330c-33c3-1bd1-d51e-cfb1eb64fb4f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593250934949,
+			"name": "route",
+			"description": "",
+			"collectionId": "37a0d71d-ff03-59e0-2beb-ba7e8000a9fa",
+			"responses": []
+		},
+		{
+			"id": "d60d8547-beae-6f65-3d91-627fa4e7c150",
+			"headers": "x-api-key: {{token}}\n",
+			"headerData": [
+				{
+					"key": "x-api-key",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{url}}curd/{{id}}",
+			"folder": "ed2f9c9e-c886-a883-5b33-bfd9f5151683",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593258487977,
+			"name": "delete",
+			"description": "",
+			"collectionId": "37a0d71d-ff03-59e0-2beb-ba7e8000a9fa",
+			"responses": []
+		},
+		{
+			"id": "f78b6648-5422-5b89-3799-05a417f022fe",
+			"headers": "",
+			"headerData": [],
+			"url": "{{url}}route",
+			"folder": "ac28330c-33c3-1bd1-d51e-cfb1eb64fb4f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "spid",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "hostname",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "loopback",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "macaddress",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593250816141,
+			"name": "route",
+			"description": "",
+			"collectionId": "37a0d71d-ff03-59e0-2beb-ba7e8000a9fa",
+			"responses": []
+		}
+	]
+}
