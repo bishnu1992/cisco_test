@@ -1,20 +1,32 @@
 <?php
-// Create a blank image
 $image = imagecreatetruecolor(400, 300);
 
-// Allocate a color for the polygon
-$col_poly = imagecolorallocate($image, 255, 255, 255);
+$col_1 = imagecolorallocate($image, 255, 255, 255);
+$col_2 = imagecolorallocate($image, 255, 255, 255);
+$col_3 = imagecolorallocate($image, 255, 255, 255);
 
-// Draw the polygon
 imagepolygon($image, array(
-        0,   0,
-        100, 200,
-        300, 200
+       30, 20,   
+       60, 20, 
+        70,40, 
+        60,60, 
+        30, 60,
+        20,40, 
     ),
-    3,
-    $col_poly);
+    6,
+    $col_1);
 
-// Output the picture to the browser
+imagepolygon($image, array(
+        30, 50,
+        40, 60,
+        50, 50,
+        40, 40,
+    ),
+    4,
+    $col_2);
+
+imageellipse($image, 40, 50, 10, 10, $col_3);
+
 header('Content-type: image/png');
 
 imagepng($image);
